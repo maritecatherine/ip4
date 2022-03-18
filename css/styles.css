@@ -29,3 +29,7 @@
     background-size: cover;
     width: 100%;
 }
+.main h1{
+    font-size: 4rem;
+    font-weight: 700;
+}
