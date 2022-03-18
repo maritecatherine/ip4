@@ -32,10 +32,11 @@
 .main h1{
     font-size: 4rem;
     font-weight: 700;
+    color: white;
 }
-btn1{
+.btn1{
     height: 45px;
-    width: 35px;
+    width: 35%;
     border: none;
     outline: none;
     background-color: rgb(39, 236, 39);
