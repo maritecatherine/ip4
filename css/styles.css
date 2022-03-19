@@ -28,17 +28,20 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
+    
 }
 .main h1{
     font-size: 4rem;
-    font-weight: 700;
+    font-weight: 400;
     color: white;
 }
 .btn1{
     height: 45px;
-    width: 35%;
+    width: 10%;
     border: none;
     outline: none;
     background-color: rgb(39, 236, 39);
+    border-radius: 60px;
+    font-weight: 700;
 
 }
