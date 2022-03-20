@@ -92,9 +92,9 @@
               <form action="">
                 <label for="select">Pizza Size</label>
                 <select class="form-select form-select-sm">
-                  <option value="Small">Small</option>
-                  <option value="Medium">Medium</option>
-                  <option value="Large">Large</option>
+                  <option value="600">Small</option>
+                  <option value="850">Medium</option>
+                  <option value="1100">Large</option>
                 </select>
                 <label for="select">Pizza Flavours</label>
                 <select class="form-select form-select-sm">
@@ -114,15 +114,15 @@
                 </select>
                 <label for="topping">Choose extra topping</label>
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" id="Cheese" value="Cheese" name="toppings">
+                  <input class="form-check-input" type="checkbox" id="Cheese" value="120" name="toppings">
                   <label class="form-check-label" for="Cheese">Cheese</label>
                 </div>
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" id="Sweetcorn" value="Sweetcorn">
+                  <input class="form-check-input" type="checkbox" id="Sweetcorn" value="70">
                   <label class="form-check-label" for="Sweetcorn">Sweetcorn</label>
                 </div>
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" id="Pepperoni" value="Pepperoni">
+                  <input class="form-check-input" type="checkbox" id="Pepperoni" value="100">
                   <label class="form-check-label" for="Pepperoni">Pepperoni</label>
                 </div>
                 <br><br>
@@ -139,7 +139,7 @@
                 <table class="table">
                   <thead>
                     <tr>
-                      <th scope="col">#</th>
+                      <th scope="col">Unit</th>
                       <th scope="col">Flavour</th>
                       <th scope="col">size</th>
                       <th scope="col">Crust</th>
@@ -147,12 +147,14 @@
                       <th scope="col">Total</th>
                     </tr>
                   </thead>
-                  <tbody>
+                  <tbody id="ordersmade" >
                     <tr>
                       <th scope="row">1</th>
-                      <td></td>
-                      <td>Otto</td>
-                      <td>@mdo</td>
+                      <td id="flavour"></td>
+                      <td id="size"></td>
+                      <td id="crust"></td>
+                      <td id="topping"></td>
+                      <td id="total"></td>
                     </tr>
                   </tbody>
                 </table>
