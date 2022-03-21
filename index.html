@@ -55,8 +55,7 @@
                 <img src="images/vegetable pizza.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  
                 </div>
               </div>
             </div>
@@ -65,8 +64,7 @@
                 <img src="images/hawaiian pizza.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  
                 </div>
               </div>
             </div>
@@ -84,99 +82,108 @@
         </div>
       </section>
 
-      <section class="order">
+      <section class=" ordering">
         <div class="container py-5">
           <h1 class="py-2 text-center">Place Order</h1>
-          <div class="row justify-content-md-center">
-              <form action="">
-                <label for="select">Pizza Size</label>
-                <select class="form-select form-select-sm size">
-                  <option value="600">Small</option>
-                  <option value="850">Medium</option>
-                  <option value="1100">Large</option>
-                </select>
-                <label for="select">Pizza Name</label>
-                <select class="form-select form-select-sm name">
-                  <option value="Cheese Pizza">Cheese Pizza</option>
-                  <option value="Pepperoni Pizza">Pepperoni Pizza</option>
-                  <option value="Margherita Pizza">Margherita Pizza</option>
-                  <option value="Buffalo Pizza">Buffalo Pizza</option>
-                  <option value="Vegetale Pizza">Vegetale Pizza"</option>
-                  <option value="BBQ Chicken Pizza">BBQ Chicken Pizza</option>
-                  <option value="hawaiian Pizza">hawaiian Pizza</option>
-                </select>
-                <label for="select">Pizza crust</label>
-                <select class="form-select form-select-sm crust">
-                  <option value="350">Gluten-free</option>
-                  <option value="300">Stuffed</option>
-                  <option value="250">Cripsy</option>
-                </select>
-                <label for="topping">Choose extra topping</label>
-                <select class="form-select form-select-sm  topping">
-                  <option value="120">Cheese</option>
-                  <option value="70">SWeetcorn</option>
-                  <option value="100">Pepperoni</option>
-                </select>             
-                <br><br>
-                <div class="text-center">
-                  <button type="submit" class="btn btn-primary text order">Order</button>
-
-                </div>
-              </form>
-          </div>
-          <div class="row">
-            <div class="choosen">
-              <h1>Ordered Items:</h1>
-              <div id="Orders-made">
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th scope="col">Unit</th>
-                      <th scope="col">Name</th>
-                      <th scope="col">size</th>
-                      <th scope="col">Crust</th>
-                      <th scope="col">topping</th>
-                      <th scope="col">Total</th>
-                    </tr>
-                  </thead>
-                  <tbody id="ordersmade" >
-                    <tr>
-                      <th scope="row">1</th>
-                      <td id="name"></td>
-                      <td id="size"></td>
-                      <td id="crust"></td>
-                      <td id="topping"></td>
-                      <td id="total"></td>
-                    </tr>
-                  </tbody>
-                </table>
-                <div class="extra">
+            <div class="row justify-content-md-center">
+              <div class="col-sm-4">
+                <form action="">
+                  <label for="select">Pizza Size</label>
+                  <select class="form-select form-select-sm size">
+                    <option value="600">Small</option>
+                    <option value="850">Medium</option>
+                    <option value="1100">Large</option>
+                  </select>
+                  <label for="select">Pizza Name</label>
+                  <select class="form-select form-select-sm name">
+                    <option value="Cheese Pizza">Cheese Pizza</option>
+                    <option value="Pepperoni Pizza">Pepperoni Pizza</option>
+                    <option value="Margherita Pizza">Margherita Pizza</option>
+                    <option value="Buffalo Pizza">Buffalo Pizza</option>
+                    <option value="Vegetale Pizza">Vegetale Pizza"</option>
+                    <option value="BBQ Chicken Pizza">BBQ Chicken Pizza</option>
+                    <option value="hawaiian Pizza">hawaiian Pizza</option>
+                  </select>
+                  <label for="select">Pizza crust</label>
+                  <select class="form-select form-select-sm crust">
+                    <option value="350">Gluten-free</option>
+                    <option value="300">Stuffed</option>
+                    <option value="250">Cripsy</option>
+                  </select>
+                  <label for="topping">Choose extra topping</label>
+                  <select class="form-select form-select-sm  topping">
+                    <option value="120">Cheese</option>
+                    <option value="70">SWeetcorn</option>
+                    <option value="100">Pepperoni</option>
+                  </select>             
+                  <br><br>
                   <div class="text-center">
-                    <button class="btn btn-primary add-pizza" type="submit"> Add Pizza</button>
-                    <div class="bill">
-                      <p class="checkout-total">Total bill: <span></span></p>
-                      <p class="delivery-cost">Request for delivery at a cost of <em>150</em></p>
-                      <p class="delivery-info">Your order will be delivered within one hour at <span></span> </p>
-                      <div class="person">
-                        <form action="">
-                          <input type="text" class="mx-5" id="name" placeholder="Enter your name" required>
-                          <input type="number" class="mx-5" id="phone" placeholder="Enter phone no" required>
-                          <input type="text" class="mx-5" id="location" placeholder="Input your location" required>
-                          <button class="btn btn-primary proceed" type="submit">Proceed</button>
-                        </form>
+                    <button type="submit" class="btn btn-primary text order">Order</button>
+  
+                  </div>
+                </form>
+              </div>
+              <div class="col-sm-8">
+                <div class="choosen">
+                  <h1>Ordered Items:</h1>
+                  <div id="Orders-made">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">Unit</th>
+                          <th scope="col">Name</th>
+                          <th scope="col">size</th>
+                          <th scope="col">Crust</th>
+                          <th scope="col">topping</th>
+                          <th scope="col">Total</th>
+                        </tr>
+                      </thead>
+                      <tbody id="ordersmade" >
+                        <tr>
+                          <th scope="row">1</th>
+                          <td id="name"></td>
+                          <td id="size"></td>
+                          <td id="crust"></td>
+                          <td id="topping"></td>
+                          <td id="total"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="extra-buttons">
+                      <div class="text-center">
+                        <button class="btn btn-primary add-pizza" type="submit"> Add Pizza</button>
+                        <div class="bill">
+                          <p class="checkout-total">Total bill: <span></span></p>
+                          <p class="delivery-cost">Request for delivery at a cost of <em>150</em></p>
+                          <p class="delivery-info">Your order will be delivered within one hour at <span></span> </p>
+                          <div class="person">
+                            <form action="">
+                              <input type="text" class="mx-5" id="name" placeholder="Enter your name" required>
+                              <input type="number" class="mx-5" id="phone" placeholder="Enter phone no" required>
+                              <input type="text" class="mx-5" id="location" placeholder="Input your location" required>
+                              <button class="btn btn-primary proceed" type="submit">Proceed</button>
+                            </form>
+                          </div>
+                          <br>
+                          <button class="btn btn-primary yes" type="submit">Yes</button>
+                          <button class="btn btn-primary no" type="submit">No</button>
+    
+                        </div>
+                        <div>
+                          <button class="btn btn-primary mt-2 checkout" type="submit">Checkout</button>
+    
+                        </div>
+    
                       </div>
-                      <br>
-                      <button class="btn btn-primary delivery" type="submit">Home delivery</button>
-                      <button class="btn btn-primary checkout" type="submit">Checkout</button>
-
                     </div>
-
                   </div>
                 </div>
+    
               </div>
-            </div>
-
-          </div>
+              </div>
+  
+        </div>
+          
         </div>
 
       </section>
