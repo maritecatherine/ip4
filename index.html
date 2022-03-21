@@ -7,8 +7,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&family=Rubik&display=swap" rel="stylesheet">
     
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
      
@@ -39,10 +37,11 @@
               <div class="row py-5 text-center">
                   <div class="col-lg-7 pt-5 "></div>
                   <h1 class="pt-5">Worth's pizza hub</h1>
+                  <!--
                   <div class="text-center">
                     <button class="btn1 text mt-3">Place Order</button>
                   </div>
-                  
+                 --> 
               </div>
           </div>
       </section>
@@ -113,18 +112,11 @@
                   <option value="250">Cripsy</option>
                 </select>
                 <label for="topping">Choose extra topping</label>
-                <div class="form-check form-check-inline topping">
-                  <input class="form-check-input" type="checkbox" id="Cheese" value="120" name="toppings">
-                  <label class="form-check-label" for="Cheese">Cheese</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" id="Sweetcorn" value="70">
-                  <label class="form-check-label" for="Sweetcorn">Sweetcorn</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" id="Pepperoni" value="100">
-                  <label class="form-check-label" for="Pepperoni">Pepperoni</label>
-                </div>
+                <select class="form-select form-select-sm  topping">
+                  <option value="120">Cheese</option>
+                  <option value="70">SWeetcorn</option>
+                  <option value="100">Pepperoni</option>
+                </select>             
                 <br><br>
                 <div class="text-center">
                   <button type="submit" class="btn btn-primary text order">Order</button>
@@ -162,14 +154,14 @@
                   <div class="text-center">
                     <button class="btn btn-primary add-pizza" type="submit"> Add Pizza</button>
                     <div class="bill">
-                      <p>Total bill:</p>
-                      <p>Request for delivery at a cost of <em>150</em></p>
-                      <p class="delivery-info">Your order will be delivered within one hour at</p>
+                      <p class="checkout-total">Total bill: <span></span></p>
+                      <p class="delivery-cost">Request for delivery at a cost of <em>150</em></p>
+                      <p class="delivery-info">Your order will be delivered within one hour at <span></span> </p>
                       <div class="person">
                         <form action="">
-                          <input type="text" class="mx-5" placeholder="Enter your name" required>
-                          <input type="number" class="mx-5" placeholder="Enter phone no" required>
-                          <input type="text" class="mx-5" placeholder="Input your location" required>
+                          <input type="text" class="mx-5" id="name" placeholder="Enter your name" required>
+                          <input type="number" class="mx-5" id="phone" placeholder="Enter phone no" required>
+                          <input type="text" class="mx-5" id="location" placeholder="Input your location" required>
                           <button class="btn btn-primary proceed" type="submit">Proceed</button>
                         </form>
                       </div>
@@ -192,10 +184,8 @@
     
     
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
+    
     <script src="js/jquery-3.6.0.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 
     
