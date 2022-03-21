@@ -50,7 +50,7 @@ table th,td{
 }
 .choosen{
     display: none;
-    color: green;
+    color: rgb(228, 236, 228);
 }
 .person{
     display: none;
@@ -63,5 +63,5 @@ table th,td{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    color: rgb(16, 231, 34);
+    color: rgb(228, 236, 228);
 }
