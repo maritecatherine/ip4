@@ -18,6 +18,7 @@ $(document).ready(function(){
         var checkoutTotal = 0;
 
 
+
     $("table").show();
     $(".extra").show();
     $(".order").hide();
@@ -42,9 +43,22 @@ $(document).ready(function(){
 
         var newPizza = new Pizza(pizzaName, pizzaSize, pizzaTopping, pizzaCrust, total, unit);
         
-
+         $("#ordersmade").append('<tr><th scope="row">' + newPizza.unit + '</th><td id="name">' + newPizza.name + '</td><td id="size">' + newPizza.size + '</td><td id="crust">' + newPizza.crust + '</td><td id="topping">'+newPizza.topping+'</td><td id="total">' +newPizza.total+'</td></tr>');
+         console.log(newPizza)
 
     });
+    $(".checkout").click(function(){
+        $(".add-pizza").hide();
+        $(".checkout").hide();
+        $(".bill").show();
+        $(".delivery").show();
+        $(".bill.person").hide();
+        checkoutTotal = checkoutTotal + total;
+
+        $(".delivery- info").html(checkoutTotal);
+    });
+
+
 
 
 
