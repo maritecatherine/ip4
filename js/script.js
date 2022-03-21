@@ -18,16 +18,30 @@ $(document).ready(function(){
         var checkoutTotal = 0;
 
 
-        $("table").show();
-        $(".extra").show();
-        $(".order").hide();
+    $("table").show();
+    $(".extra").show();
+    $(".order").hide();
 
 
-        $("#name").html($(".name option:selected").text());
-        $("#size").html($(".size option:selected").text());
-        $("#crust").html($(".crust option:selected").text());
-        $("#topping").html($(".topping option:selected").text());
-        $("#total").html(total);
+    $("#name").html($(".name option:selected").text());
+    $("#size").html($(".size option:selected").text());
+    $("#crust").html($(".crust option:selected").text());
+    $("#topping").html($(".topping option:selected").text());
+    $("#total").html(total);
+
+
+        
+    $(".add-pizza").click(function(){
+        var pizzaName = $(".name option:selected").val();
+        var pizzaSize = $(".size option:selected").val();
+        var pizzaTopping = $(".topping option:selected").val();
+        var pizzaCrust = $(".crust option:selected").val();
+        var total = parseInt(pizzaSize + pizzaTopping + pizzaCrust);
+        var unit = unit + 1;
+        var checkoutTotal = checkoutTotal + total;
+
+
+    });
 
 
 
