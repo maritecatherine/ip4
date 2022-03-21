@@ -40,6 +40,9 @@ $(document).ready(function(){
         var unit = unit + 1;
         var checkoutTotal = checkoutTotal + total;
 
+        var newPizza = new Pizza(pizzaName, pizzaSize, pizzaTopping, pizzaCrust, total, unit);
+        
+
 
     });
 
