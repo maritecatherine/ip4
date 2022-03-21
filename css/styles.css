@@ -45,8 +45,12 @@
     font-weight: 700;
 
 }
+table th,td{
+    color: white;
+}
 .choosen{
     display: none;
+    color: green;
 }
 .person{
     display: none;
@@ -59,5 +63,5 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    color: white;
+    color: rgb(16, 231, 34);
 }
