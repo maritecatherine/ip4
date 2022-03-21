@@ -65,3 +65,6 @@ table th,td{
     background-position: center;
     color: rgb(228, 236, 228);
 }
+.container-fluid{
+    background-color: rgb(87, 245, 87);
+}
